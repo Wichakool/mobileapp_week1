@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mobileapp_week1/constant.dart';
-import 'package:mobileapp_week1/login.dart';
-
-import 'home.dart';
-import 'index.dart';
-import 'register.dart';
-import 'constant.dart';
+import 'package:mobileapp_week1/config/constant.dart';
+import 'package:mobileapp_week1/screen/dashboard.dart';
+import 'package:mobileapp_week1/screen/login.dart';
+import 'package:mobileapp_week1/screen/register.dart';
+import 'screen/index.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,14 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Index(),
-        routes: {
-          'Login': (context) => Login(),
-          'Register': (context) => Register()
-        },
-        theme: ThemeData(
-          primaryColor: pColor,
-          secondaryHeaderColor: sColor,
-        ));
+      home: Dashboard(),
+      routes: {
+        'Login': (context) => Login(),
+        'Register': (context) => Register(),
+        'Dashboard': (context) => Dashboard(),
+      },
+      theme: ThemeData(
+        primaryColor: sColor,
+        secondaryHeaderColor: sColor,
+      ),
+    );
   }
 }
