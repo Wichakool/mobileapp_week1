@@ -17,9 +17,11 @@ class Index extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Image.asset(
-                  "asset/image/logo.png",
-                  width: size.width * 0.35,
+               Image(
+                  image: NetworkImage(
+                      "https://kmutnb.ac.th/getattachment/about/symbols/logo_kmutnb-(6).png.aspx?width=250&height=246"),
+                  width: size.width * 0.5,
+                  height: size.height * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -32,10 +34,12 @@ class Index extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Image.asset(
-                  "asset/image/main.png",
-                ),
-                SizedBox(
+                Image(
+                  image: NetworkImage(
+                      "https://www.pngall.com/wp-content/uploads/5/University-PNG-Free-Image.png"),
+                  width: size.width * 1,
+                  height: size.height * 0.3,
+                ),SizedBox(
                   height: 20,
                 ),
                 ElevatedButton(
