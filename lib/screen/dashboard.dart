@@ -38,6 +38,75 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: pColor,
+              ),
+              child: Text(
+                'Menu',
+                style: TextStyle(
+                  fontSize: 28,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'Video',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              leading: Icon(
+                Icons.video_call,
+                color: Colors.pink,
+                size: 35,
+              ),
+              onTap: () {
+                print('Video');
+                Navigator.pushNamed(context, 'Video');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Image',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              leading: Icon(
+                Icons.image,
+                color: Colors.green,
+                size: 30,
+              ),
+              onTap: () {
+                print('Image');
+                Navigator.pushNamed(context, 'Image');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Location',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              leading: Icon(
+                Icons.near_me,
+                color: Colors.blue,
+                size: 30,
+              ),
+              onTap: () {
+                print('Location');
+                Navigator.pushNamed(context, 'Location');
+              },
+            ),
+          ],
+        ),
+      ),
         appBar: AppBar(
           title: Row(
             children: [
