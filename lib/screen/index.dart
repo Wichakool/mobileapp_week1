@@ -54,7 +54,7 @@ class Index extends StatelessWidget {
                   ),
                   onPressed: () {
                     print("Hello Worlds");
-                    Navigator.pushNamed(context, 'Login');
+                    Navigator.pushNamed(context, 'firebase_login');
                   },
                 ),
                 SizedBox(
@@ -72,7 +72,7 @@ class Index extends StatelessWidget {
                   ),
                   onPressed: () {
                     print("Hello World");
-                    Navigator.pushNamed(context, 'Register');
+                    Navigator.pushNamed(context, 'firebase_register');
                   },
                 ),
               ],

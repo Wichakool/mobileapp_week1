@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "543110617025",
+    "project_id": "moblieapp-4528a",
+    "firebase_url":"https://moblieapp-4528a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "storage_bucket": "moblieapp-4528a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543110617025:android:f3bfc792ead8b660758140",
+        "android_client_info": {
+          "package_name": "com.example.mobileapp_week1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543110617025-u1hueee70nuk5pkns6nkgb8o5j8nrp51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJT9h-YtcHerzoJymP1DNAzRHDyHHFE7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543110617025-u1hueee70nuk5pkns6nkgb8o5j8nrp51.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

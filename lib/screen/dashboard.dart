@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mobileapp_week1/config/constant.dart';
 import 'package:mobileapp_week1/model/TCT.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,11 @@ class _DashboardState extends State<Dashboard> {
       data = tctFromJson(response.body);
     });
 
+  }
+  
+  Future<void> logout() async {
+    await FirebaseAuth.instance.signOut();
+    print("true");
   }
 
   @override
@@ -104,6 +110,41 @@ class _DashboardState extends State<Dashboard> {
                 Navigator.pushNamed(context, 'Location');
               },
             ),
+            ListTile(
+                onTap: () {
+                  print('Menu Store');
+                  Navigator.pushNamed(context, 'Store');
+                },
+                title: Text(
+                  'Store',
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+                leading: Icon(
+                  Icons.store,
+                  color: Colors.purple,
+                  size: 36,
+                ),
+              ),
+              ListTile(
+                onTap: () {
+                  logout();
+                  Navigator.of(context).pop();
+                  Navigator.pushNamed(context, 'Index', arguments: []);
+                },
+                title: Text(
+                  'Log out',
+                  style: TextStyle(
+                    fontSize: 24,
+                  ),
+                ),
+                leading: Icon(
+                  Icons.logout,
+                  color: Colors.blue,
+                  size: 36,
+                ),
+              ),
           ],
         ),
       ),
